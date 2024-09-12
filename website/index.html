@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Wiktor Gapiński</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Wiktor Gapiński</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience"  onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+     </nav>
+     <section id="profile"> 
+        <div class="section__pic-profile">
+            <img src="./assets/profile-pic1.jpg" alt="Wiktor Gapiński profile picture"/> 
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Cześć, Jestem</p>
+            <h1 class="title">Wiktor Gapiński</h1>
+            <p class="section__text__p2">Student Informatyki</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')"> Pobierz CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info</button>
+            </div>
+            <div id="socials_container">
+                <img src="./assets/guzik.png" alt="Mój profil fortnajt"
+                class="icon" onclick="location.href='https://www.youtube.com/watch?v=xcKrWKt4ZMI'"/>
+                <img src="./assets/25231.png" alt="Mój profil github"
+                class="icon" onclick="location.href='https://github.com/WiktorGap"/>
+
+            </div>
+        </div>
+     </section>
+     <section id="about">
+        <p class="section__text__p1">Przejdź, aby dowiedzieć się więcej</p>
+        <h1 class="tittle">O mnie</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/sd.jpg" alt="Profile picture" class="about-pic"/>
+
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers" > 
+                    <div class="details-container">
+                        <img src="./assets/2441759.png" 
+                        alt="expierience icon"
+                        class="icon" />
+                        <h3>Expierience</h3>
+                        <p> +3 miesiące <br> Student </p>
+
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/buk.jpg" 
+                        alt="Education icon"
+                        class="icon" />
+                        <h3>Education</h3>
+                        <p> III LO. w Płocku <br> Szef szkoły </p>
+
+                    </div>
+                </div>
+            <div class="text-container">
+                <p1></p1>
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"  alt="Arrow icon" class="icon arrow" oneclick="location.href='./#experience' "/>
+        
+     </section>
+     <section id="expierience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="tittle">Experience</h1>
+        <div class="expierience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="expierience-sub-tittle">Student Informatyki</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/czek.png" alt="Expierience icon" class="icon"/>
+                            <div>
+                                <h3>Nasa Developer</h3>
+                                <p1>maybe in future</p1>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/czek.png" alt="Expierience icon" class="icon"/>
+                            <div>
+                                <h3>Python creator</h3>
+                                <p1>3 months</p1>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/czek.png" alt="Expierience icon" class="icon"/>
+                            <div>
+                                <h3>gracz Fortnajt</h3>
+                                <p1>lvl: bambik</p1>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/czek.png" alt="Expierience icon" class="icon"/>
+                            <div>
+                                <h3>mega super extened big data</h3>
+                                <p1>in progess</p1>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/czek.png" alt="Expierience icon" class="icon"/>
+                            <div>
+                                <h3> gigachad </h3>
+                                <p1>final python boss</p1>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/czek.png" alt="Expierience icon" class="icon"/>
+                            <div>
+                                <h3>HTML expert</h3>
+                                <p1>basic expert XD</p1>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p1>
+            <h1 class="tittle">Projects</h1>
+            <div class="details-container"> 
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project1.png"  alt="Project 1" class="project-png" />
+                    </div>
+                    <h2 class="expierience-sub-tittle project-tittle">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/WiktorGap?tab=projects'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/WiktorGap?tab=projects'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+     </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
